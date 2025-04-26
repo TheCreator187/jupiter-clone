@@ -1,0 +1,16 @@
+{
+    "name": "jupiter-clone",
+    "version": "1.0.0",
+    "description": "Full-stack Jupiter Aggregator clone",
+    "scripts": {
+      "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+      "build": "cd client && npm run build",
+      "install": "cd server && npm install && cd ../client && npm install",
+      "server": "cd server && npm start",
+      "client": "cd client && npm start",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "dependencies": {
+      "concurrently": "^8.0.1"
+    }
+  }
